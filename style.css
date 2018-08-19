@@ -35,7 +35,7 @@ header{
 }
 
 .nav h1{
-
+  font-size: 20px;
 }
 
 .menu{
@@ -82,7 +82,7 @@ main p{
     top:0;
     right:0;
     display: block;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.4);
     width:300px;
     height:100%;
     z-index:3;
@@ -106,7 +106,9 @@ main p{
   }
 
   .mobile-btn{
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
     cursor: pointer;
   }
   .overlay{
@@ -117,7 +119,7 @@ main p{
     width:100%;
     background-color:rgba(0, 0, 0, 0.4);
     opacity:0;
-    z-index:1;
+    z-index:-1;
     transition: opacity 300ms linear;
   }
   .overlay.open{
